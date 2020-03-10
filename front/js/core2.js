@@ -1,13 +1,20 @@
-//Quitar esto. Estos son los
+//Son los atributos selecciondaos desde vista
 var attributesGlobal = [];
+
+//Es el json completo con todos los atributos
+var attributesOfficial = [];
+
 //"cascada","soap","blackboard"
 var arquitecturesGlobal = [];
+
+var arquitecturesOfficial = [];
 
 /*
 * Construye los combos de atributos de calidad y arquitecturas
 */
 function cargarInformacion(){
     $.getJSON("js/attributes.json", function(myData) {
+        attributesOfficial = myData;
         new Vue({
             el: '#cont-myAttributes',
             data: {
@@ -36,6 +43,7 @@ function cargarInformacion(){
         });         
     });
     $.getJSON("js/arquitectures.json", function(myDat) {
+        arquitecturesOfficial = myDat;
         new Vue({
             el: '#cont-myArquitecturas',
             data: {
@@ -62,18 +70,46 @@ function cargarInformacion(){
 
                     //Esto lo tengo que hacer para controlar la vista
                     for(let i in this.todos){
-                        for(let j in this.todos[i].arquitectures){
-                            if(this.todos[i].uid != typeUID && this.todos[i].arquitectures[j].uid == argument){
+                        for(let j in this.todos[i].arquitectures){                            
+                            if(this.todos[i].uid != typeUID && this.todos[i].arquitectures[j].uid == argument){                                
                                 caja = document.getElementById("caja_"+this.todos[i].uid+"_"+argument);
                                 if(caja.hidden){
-                                    caja.hidden = false ;                            
+                                    caja.hidden = false ;                                                                
                                 }else{
-                                    caja.hidden = true ;
+                                    caja.hidden = true ;                                    
                                 }                                
-                            }
+                            }                            
                         }
                     }
 
+
+                    arrayUidAttr = [];
+                    for(let i in attributesGlobal){
+                        uidattr = getUidByName(attributesOfficial, attributesGlobal[i]);    
+                        arrayUidAttr.push(uidattr);
+                    }
+
+                    for(let i in this.todos){
+                        for(let j in this.todos[i].arquitectures){
+                            if(this.todos[i].uid == typeUID && this.todos[i].arquitectures[j].uid == argument){               
+                                peso = document.getElementById("peso_"+this.todos[i].uid+"_"+argument);                            
+                                if(peso.innerHTML == "..."){
+                                    peso.innerHTML = "";
+                                    my_scores = getScore(arquitecturesOfficial, argument, arrayUidAttr);                                
+                                    var rta = "";
+                                    for(let k in arrayUidAttr){
+                                        rta += getNamedByUid(attributesOfficial, arrayUidAttr[k])+": "+my_scores[k]+" ";
+                                    }
+                                    peso.innerHTML = rta;                                    
+                                }else{
+                                    peso.innerHTML = "...";                                    
+                                }
+                                
+
+                                }                               
+                            }
+                        }                
+                    
 
                 }
             }
@@ -94,6 +130,63 @@ function isContenido(arrayAttributes, nameAttribute) {
     }
     return -1;
 }
+
+function getUidByName(arrayOficial, name_att) {
+    for(let i in arrayOficial){
+        for(let j in arrayOficial[i].attributes){
+            if(arrayOficial[i].attributes[j].name == name_att){
+                return arrayOficial[i].attributes[j].uid;
+            }
+        }
+    }
+}
+
+function getNamedByUid(arrayOficial, uid_att) {
+    for(let i in arrayOficial){
+        for(let j in arrayOficial[i].attributes){
+            if(arrayOficial[i].attributes[j].uid == uid_att){
+                return arrayOficial[i].attributes[j].name;
+            }
+        }
+    }
+}
+
+function getScore(arrayArqOficial, uidArq, arrayUidAttr){
+    var scores_arq = []; 
+    for(let i in arrayArqOficial){
+        for(let j in arrayArqOficial[i].arquitectures){
+            if(arrayArqOficial[i].arquitectures[j].uid == uidArq){                
+                for(let l in arrayUidAttr){
+                    for(let k in arrayArqOficial[i].arquitectures[j].score_attributes){
+                        if(arrayArqOficial[i].arquitectures[j].score_attributes[k].uid_attrib == arrayUidAttr[l] ){                            
+                            scores_arq.push(arrayArqOficial[i].arquitectures[j].score_attributes[k].score);
+                        }
+                    }                    
+                }                                    
+            }
+        }
+    }
+    return scores_arq;
+}
+
+//Cuenta cuantas veces se repite una arquitectura
+function cantArqui(arrayArqOficial, uidArq){
+    var cant = 0; 
+    for(let i in arrayArqOficial){
+        for(let j in arrayArqOficial[i].arquitectures){
+            if(arrayArqOficial[i].arquitectures[j].uid == uidArq){                
+                cant = cant + 1;
+            }
+        }
+    }
+    return cant;
+}
+
+
+
+
+
+
 
 function construirTablas(argument) {
     new Vue({
