@@ -1,0 +1,1228 @@
+[
+	{
+		"uid" : 0,
+		"type" : "Data Flow System",
+		"arquitectures" : [
+			{
+				"uid" : 0,
+				"name" : "batch sequential",				
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 0
+					},					
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : -2
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},
+			{
+				"uid" : 1,
+				"name" : "pipe & filter",				
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : -2
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : -1
+					}
+				]	
+			},
+			{
+				"uid" : 2,
+				"name" : "process control",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			}			
+		]
+	},
+	{
+		"uid" : 1,
+		"type" : "Centralized Data Store System",
+		"arquitectures" : [
+			{
+				"uid" : 3,
+				"name" : "repository arch",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 1
+					},				
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},
+			{
+				"uid" : 4,
+				"name" : "blackboard arch",
+				"score_attributes" : [				
+					{
+						"uid_attrib" : 1,
+						"score" : -1 
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},				
+					{
+						"uid_attrib" : 9,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			}				
+		]
+	},
+	{
+		"uid" : 2,
+		"type" : "Large/Complex System",
+		"arquitectures" : [
+			{
+				"uid" : 3,
+				"name" : "repository arch",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 1
+					},				
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},
+			{
+				"uid" : 4,
+				"name" : "blackboard arch",
+				"score_attributes" : [				
+					{
+						"uid_attrib" : 1,
+						"score" : -1 
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},				
+					{
+						"uid_attrib" : 9,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},		
+			{
+				"uid" : 5,
+				"name" : "main-subroutine",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},
+			{
+				"uid" : 6,
+				"name" : "master-slave",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},
+			{
+				"uid" : 7,
+				"name" : "layered arch",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : -2
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			}		
+		]
+	},
+	{
+		"uid" : 3,
+		"type" : "Web Service",
+		"arquitectures" : [
+			{
+				"uid" : 8,
+				"name" : "service-oriented",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},
+			{
+				"uid" : 9,
+				"name" : "mvc",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 1 
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : -2
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 1
+					}
+				]	
+			}
+		]
+	},
+	{
+		"uid" : 4,
+		"type" : "Distributed System",
+		"arquitectures" : [
+			{
+				"uid" : 10,
+				"name" : "client server",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},
+			{
+				"uid" : 11,
+				"name" : "broker arch",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			},
+			{
+				"uid" : 8,
+				"name" : "service-oriented",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 2
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			}
+		]
+	},
+	{
+		"uid" : 5,
+		"type" : "User-Interaction Oriented System",
+		"arquitectures" : [
+			{
+				"uid" : 9,
+				"name" : "mvc",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 1 
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : -2
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 1
+					}
+				]	
+			},
+			{
+				"uid" : 12,
+				"name" : "presentation abstraction control (pac)",
+				"score_attributes" : [
+					{
+						"uid_attrib" : 1,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 2,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 3,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 4,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 5,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 6,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 7,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 8,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 9,
+						"score" : -1
+					},
+					{
+						"uid_attrib" : 10,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 11,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 12,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 13,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 14,
+						"score" : 0
+					},
+					{
+						"uid_attrib" : 15,
+						"score" : 1
+					},
+					{
+						"uid_attrib" : 16,
+						"score" : 0
+					}
+				]	
+			}				
+		]
+	}
+]

@@ -1,0 +1,273 @@
+
+
+                    <!-------------Inicio pintar --------------------->
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Horizontal form</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#" class="dropdown-item">Config option 1</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content" id="cont-myAttributes">
+                            <div class="form-group row" v-for="todo in todos">
+                                <label class="col-sm-2 col-form-label">{{todo.type}}
+                                    <br>
+                                    <!--<small class="text-navy">Custom elements</small> -->
+                                </label>
+
+                                <div class="col-sm-10">
+                                    <div class="i-checks" v-for="att in todo.attributes">
+                                        <label v-on:click="addAttributesGlobal(att.uid)">
+                                            <div class="icheckbox_square-green" style="position: relative;">
+                                                <input type="checkbox" style="position: absolute; opacity: 0;" :id="'check_attrib_id_' + att.uid" />
+                                                <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">                                                
+                                            </ins></div>
+                                            <i></i> {{att.name}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Horizontal form</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#" class="dropdown-item">Config option 1</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content" id="cont-myArquitecturas">
+                            <div class="form-group row" v-for="todo in todos">
+                                <label class="col-sm-2 col-form-label">{{todo.type}}
+                                    <br>
+                                    <!--<small class="text-navy">Custom elements</small>-->
+                                </label>
+
+                                <div class="col-sm-10">
+                                    <div class="i-checks" v-for="arq in todo.arquitectures">
+                                        <label :id="'caja_'+todo.uid+'_'+arq.uid" v-on:click="addArquitecturesGlobal(todo.uid, arq.uid)">
+                                            <div class="icheckbox_square-green" style="position: relative;">
+                                                <input type="checkbox" value="" style="position: absolute; opacity: 0;" :id="'check_attrib_id_' + arq.uid" /><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                            <i></i> {{arq.name}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="construirTablas();">construir tablas</button>
+                    </div>
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Border Table </h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#" class="dropdown-item">Config option 1</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+
+                            <table class="table table-bordered" id="table-assest-attri">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th v-for="attr in attributes">
+                                            {{attr}}
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody :id="tbodyId">
+                                    <tr v-for="attr in attributes">
+                                        <td>{{attr}}</td>
+                                        <td contenteditable='true' v-for="attr in attributes" v-on:keyup="evaluarTabla"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="ibox-content">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Matrix Consistency (CI)</th>
+                                            <th>Random Consistency Index (IR)</th>
+                                            <th>Consistency Ratio (CR)</th>
+                                            <th>Consistency</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="attrib_IC"></td>
+                                            <td id="attrib_IR"></td>
+                                            <td id="attrib_CR"></td>
+                                            <td id="attrib_CONS"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="ibox" id="arquitectures_cont">
+                        <div class="ibox-title">
+                            <h5>Border Table </h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#" class="dropdown-item">Config option 1</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content" v-for="(attrib, index) in attributes" :key="index">
+                            <b> <label>{{attrib}}</label> </b>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th v-for="arq in arquitectures">
+                                            {{arq}}
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody :id="'arq_tbody_id_'+index">
+                                    <tr v-for="arq in arquitectures">
+                                        <td>{{arq}}</td>
+                                        <td contenteditable='true' v-for="arq in arquitectures" v-on:keyup="validarTabla(index, $event)"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="ibox-content">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Matrix Consistency (CI)</th>
+                                            <th>Random Consistency Index (IR)</th>
+                                            <th>Consistency Ratio (CR)</th>
+                                            <th>Consistency</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td :id="'arq_IC_' + index"></td>
+                                            <td :id="'arq_IR_' + index"></td>
+                                            <td :id="'arq_CR_' + index"></td>
+                                            <td :id="'arq_CO_' + index"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Resultados</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#" class="dropdown-item">Config option 1</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+
+                            <table class="table" id="table_final">
+                                <thead>
+                                    <tr>
+                                        <th>Architecture</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(arq, index) in arquitectures">
+                                        <td>{{arq}}</td>
+                                        <td :id="'score_arq_'+index">0.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-sm btn-primary float-right m-t-n-xs" onclick="calcularPuntajes()"><strong>Calc score</strong></button>
+                        </div>
+                    </div>
+             
+
+             
+  <!-- Custom and plugin javascript -->
+    <script src="js/core.js"></script>
+
+    <script src="js/core2.js"></script>   
+    <!-- Carga de datos inicial -->
+    <script type="text/javascript">
+
+
+       $(document).ready(function () {                
+            cargarInformacion();                
+        });
+    </script>

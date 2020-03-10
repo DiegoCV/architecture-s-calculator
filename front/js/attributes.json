@@ -1,0 +1,103 @@
+[{
+		"type": "Implementation attributes (not observable at runtime)",
+		"attributes": [{
+				"uid": 1,
+				"name": "Maintainability",
+				"description": "The ability to modify the system and conveniently the system and conveniently extend it."
+			},
+			{
+				"uid": 2,
+				"name": "Testability",
+				"description": "The degree to which the system facilitates the establishment of test cases. Testability usually requires a complete set of documentation accompanied by system design and implementation"
+			},
+			{
+				"uid": 3,
+				"name": "Portability",
+				"description": "The system's level of independence on software and hardware platforms."
+			},
+			{
+				"uid": 4,
+				"name": "Flexibility",
+				"description": "The ease of system modification to cater to different environments or problems for which the system was not originally designed."
+			},
+			{
+				"uid": 5,
+				"name": "Reusability",
+				"description": "Reusability defines the capability for components and subsystems to be suitable for use in other applications and in other scenarios. Reusability minimizes the duplication of components and also the implementation time."
+			},
+			{
+				"uid": 6,
+				"name": "Simplicity",
+				"description": "Those attributes of the software products that provide maintenance and implementation of the functions in the most understandable manner."
+			}
+		]
+	},
+	{
+		"type": "Runtime attributes (observable at run time)",
+		"attributes": [{
+				"uid": 7,
+				"name": "Availability",
+				"description": "Availability defines the proportion of time that the system is functional and working. It can be measured as a percentage of the total system downtime over a predefined period. Availability will be affected by system errors, infrastructure problems, malicious attacks, and system load."
+			},
+			{
+				"uid": 8,
+				"name": "Security",
+				"description": "A system's security's to cope with malicious attacks from outside or inside the system."
+			},
+			{
+				"uid": 9,
+				"name": "Performance",
+				"description": "Increasing a system's efficiency with regard to response time, throughput, and resource utilization, attributes which usually conflict with each other."
+			},
+			{
+				"uid": 10,
+				"name": "Concurrency",
+				"description": "Concurrency is a property of systems in which several computations are executing simultaneously, and potentially interacting with each other. The computations may be executing on multiple cores in the same chip, preemptively time-shared threads on the same processor, or executed on physically separated processors."
+			},
+			{
+				"uid": 11,
+				"name": "Reliability",
+				"description": "The failure frequency, the accuracy of output results, the Mean-Time-to-Failure, the ability to recover from failure, and the failure predictability."
+			},
+			{
+				"uid": 12,
+				"name": "Scalability",
+				"description": "A system's ability to adapt to an increase in user requests"
+			}
+		]
+	},
+	{
+		"type": "Business attributes",
+		"attributes": [{
+				"uid": 13,
+				"name": "Cost",
+				"description": "The expense of building, maintaining, and operating the system."
+			},
+			{
+				"uid": 14,
+				"name": "Lifetime",
+				"description": "The period of time that the product is alive before retirement."
+			}
+		]
+	},
+	{
+		"type": "User attributes",
+		"attributes": [{
+				"uid": 15,
+				"name": "Usability",
+				"description": "The level of human satisfaction from using the system. Usability include matters of completeness, correctness, compatibility, as well as friendly UI, complete documentation, and technical support."
+			}
+
+		]
+	},
+	{
+		"type": "System attributes",
+		"attributes": [{
+				"uid": 16,
+				"name": "Supportability",
+				"description": "It refers to the ability of technical support personnel to install, configure, and monitor computer products, identify exceptions or faults, debug or isolate faults to root cause analysis, and provide hardware or software maintenance in pursuit of solving a problem and restoring the product into service. Incorporating serviceability facilitating features typically results in more efficient product maintenance and reduces operational costs and maintains business continuity."
+			}
+
+		]
+	}
+]
