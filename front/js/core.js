@@ -99,6 +99,23 @@ function sumarVector(vector){
 }
 
 /*
+*	Calcula el valor de landaMax
+*   vecMaxOrgVecProm = Es el vector resultado de multiplicar la matriz original por el vector de pesos promedio de la matriz normalizada.
+*   vecPromMatrizNormal = Es el vector de pesos promedio obtenido de la matriz normalizada.
+*/
+
+function landaMax(vecMaxOrgVecProm, vecPromMatrizNormal){
+	var i = 0;
+	var suma = 0;
+	while(i < vecMaxOrgVecProm.length){
+		suma += vecMaxOrgVecProm[i] / vecPromMatrizNormal[i];
+		i = i + 1;
+	}
+	return suma/vecMaxOrgVecProm.length;
+}
+
+
+/*
 *	Calcula el indice de consistencia
 *	nMax = la suma de todos los elementos del vector resultande de multiplicar la matriz original por el vector de pesos
 *	c = cardinalidad de la matriz

@@ -280,7 +280,9 @@ function calcularIndices(myTbody) {
 
     var cardinalidad = matrizOriginal.length;
 
-    var myic = IC(sumarVector(matrizOrigPorVectPes), cardinalidad);    
+    var myLandaMax = landaMax(matrizOrigPorVectPes, myvectorPesos);    
+
+    var myic = IC(myLandaMax, cardinalidad);    
     
     var myir = IR(cardinalidad);
     
