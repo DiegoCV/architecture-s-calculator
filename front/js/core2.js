@@ -210,6 +210,23 @@ function construirTablas(argument) {
                     document.getElementById("attrib_IR").innerHTML = indices.ir;
                     document.getElementById("attrib_CR").innerHTML = indices.cr;
                     document.getElementById("attrib_CONS").innerHTML = indices.co;
+                    //Guardo los datos para la posteridad
+                    /*
+                     * cardinalidad_matriz, matriz_original, matriz_normalizada, vector_pesos_matriz_normalizada, 
+                     * matriz_original_por_vector_pesos, landa_max,ic,ir,cr,cons){
+                     */
+                    set_matriz_atributos(
+                            indices.cardinalidad_matriz,
+                            indices.matriz_original,
+                            indices.matriz_normalizada,
+                            indices.vector_pesos_matriz_normalizada,
+                            indices.matriz_original_por_vector_pesos,
+                            indices.landa_max,
+                            indices.ic,
+                            indices.ir,
+                            indices.cr,
+                            indices.co
+                    );
                 }                            
             }
         }
@@ -236,6 +253,24 @@ function construirTablas(argument) {
                     document.getElementById("arq_IR_"+index).innerHTML = indices.ir;
                     document.getElementById("arq_CR_"+index).innerHTML = indices.cr;
                     document.getElementById("arq_CO_"+index).innerHTML = indices.co;
+                    //Guardo los datos para la posteridad
+                    /*
+                     * cardinalidad_matriz, matriz_original, matriz_normalizada, vector_pesos_matriz_normalizada, 
+                     * matriz_original_por_vector_pesos, landa_max,ic,ir,cr,cons){
+                     */
+                    set_matriz_arquitecturas(
+                            index,
+                            indices.cardinalidad_matriz,
+                            indices.matriz_original,
+                            indices.matriz_normalizada,
+                            indices.vector_pesos_matriz_normalizada,
+                            indices.matriz_original_por_vector_pesos,
+                            indices.landa_max,
+                            indices.ic,
+                            indices.ir,
+                            indices.cr,
+                            indices.co
+                    );
                 }
             }
         }
@@ -267,8 +302,7 @@ function inicializarTablas(){
 
 
 function calcularIndices(myTbody) {
-    var matrizOriginal = parsearTbody(myTbody);
-    
+    var matrizOriginal = parsearTbody(myTbody);    
     //Js tiende a tratar todo como global, por esa razon tuve que hacer una copia
     var copiaMatrizOriginal = copiarArray(matrizOriginal);
     
@@ -291,6 +325,12 @@ function calcularIndices(myTbody) {
     var cons = validarCR(mycr);
 
     return {
+        cardinalidad_matriz : cardinalidad,
+        matriz_original:matrizOriginal,
+        matriz_normalizada:matrizNormalizada,
+        vector_pesos_matriz_normalizada:myvectorPesos,
+        matriz_original_por_vector_pesos:matrizOrigPorVectPes,
+        landa_max:myLandaMax,
         ic: myic,
         ir: myir,
         cr:mycr,
@@ -317,7 +357,11 @@ function calcularPuntajes() {
     for (var i = 0; i < arquitecturesGlobal.length; i++) {
         document.getElementById("score_arq_"+i).innerHTML = solucion[i];    
     }
-    
+    //En esta parte voy a meter los metodos para guardar la informaciòn
+    set_arquitecturas(arquitecturesGlobal);
+    set_atributos(attributesGlobal);
+    set_puntaje_final(parsearTbody2(document.getElementById("tbody_score_final")));
+    guardar_data();
 }    
 
 /*

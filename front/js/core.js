@@ -170,6 +170,25 @@ function parsearTbody(myTbody){
 }
 
 /*
+ * Convierte un tbody en una array, la diferencia con el primero es que este si convierte todo los campos
+ * @param {type} myTbody
+ * @returns {Array|parsearTbody2.myTableArray}
+ */
+function parsearTbody2(myTbody){
+    var my_trs = myTbody.childNodes;          
+    var cant_trs = my_trs.length;            
+    var myTableArray = [];
+    for (var i = 0; i < cant_trs; i = i + 1) {
+    	var my_tds = my_trs[i].getElementsByTagName("td");
+    	var array_aux = [];
+    	for (var j = 0; j < my_tds.length; j++) {    		
+            array_aux.push(my_tds[j].innerText);  
+    	}
+    	myTableArray.push(array_aux);		    
+    }            
+    return myTableArray;
+}
+/*
 * Dentro de cada tabla se supone que hay una fraccion escrita correctamente.
 * Este metodo toma ese texto y lo convierte en numero
 */

@@ -250,7 +250,7 @@
                                         <th>Score</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="tbody_score_final">
                                     <tr v-for="(arq, index) in arquitectures">
                                         <td>{{arq}}</td>
                                         <td :id="'score_arq_'+index">0.0</td>
@@ -267,6 +267,8 @@
     <script src="js/core.js"></script>
 
     <script src="js/core2.js"></script>   
+    
+    <script src="js/jj.js"></script>
     <!-- Carga de datos inicial -->
     <script type="text/javascript">
 
